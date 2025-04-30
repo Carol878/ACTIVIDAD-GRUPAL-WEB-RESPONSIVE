@@ -1,8 +1,8 @@
 /* Estilos básicos */
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 #contenedor {
@@ -13,14 +13,14 @@ background-color: #f0f0f0;
 }
 
 header {
-  background-color: #333;
+  background-color: #2e86c1 ;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 nav {
-  background-color: #444;
+  background-color: #21618c;
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #666;
+  background-color: #2e86c1;
 }
 
 main {
@@ -68,7 +68,7 @@ form input, form textarea {
 
 form button {
   padding: 10px;
-  background-color: #333;
+  background-color: #21618c;
   color: white;
   border: none;
   cursor: pointer;
@@ -76,11 +76,11 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #2e86c1;
 }
 
 footer {
-  background-color: #333;
+  background-color: #2e86c1;
   color: white;
   text-align: center;
   padding: 15px;
