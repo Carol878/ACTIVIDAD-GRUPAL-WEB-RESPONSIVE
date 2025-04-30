@@ -3,8 +3,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  list-style: none;
 }
-
+/* para id*/
 #contenedor {
   max-width: 960px;
   margin: 0 auto;
@@ -13,38 +14,47 @@ body {
 }
 
 header {
-  background-color: #2e86c1 ;
-  color: white;
+  background-color: #2e86c1;
+  color: azure;
   padding: 20px;
   text-align: center;
 }
 
-nav {
+ul{
+  list-style: none;
+}
+.nav li a{
+  background-color: #2e86c1;
+  color:azure;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav li a:hover{
   background-color: #21618c;
 }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.nav > li {
+  float:left;
 }
 
-nav ul li {
-  margin: 0;
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
 }
 
-nav ul li a {
+.nav li:hover > ul{
   display: block;
-  padding: 14px 20px;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-  background-color: #2e86c1;
+.nav li ul li{
+  position:relative;
+}
+
+.nav li ul li ul{
+  right: -150px;
+  top:0px;
 }
 
 main {
