@@ -13,7 +13,7 @@ body {
 header {
   background-color: #2e86c1;
   color: azure;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -49,8 +49,12 @@ ul{
   display: block;
 }
 
+.nav{
+  margin: 0px;
+}
+
 .nav li{
-  position: absolute;
+  position: relative;
 }
 
 .nav li ul li{
