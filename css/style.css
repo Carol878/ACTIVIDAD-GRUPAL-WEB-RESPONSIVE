@@ -1,16 +1,13 @@
 /* Estilos básicos */
 body {
-  margin: 0;
+  margin: 0px;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   list-style: none;
 }
 /* para id*/
 #contenedor {
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
 }
 
 header {
@@ -23,6 +20,7 @@ header {
 ul{
   list-style: none;
 }
+
 .nav li a{
   background-color: #2e86c1;
   color:azure;
@@ -34,6 +32,7 @@ ul{
 .nav li a:hover{
   background-color: #21618c;
 }
+
 .nav > li {
   float:left;
 }
@@ -42,10 +41,16 @@ ul{
   display: none;
   position: absolute;
   min-width: 150px;
+  right: -165px;
+  top: 0px;
 }
 
 .nav li:hover > ul{
   display: block;
+}
+
+.nav li{
+  position: absolute;
 }
 
 .nav li ul li{
