@@ -49,6 +49,7 @@ ul{
   display: block;
 }
 
+/* Para que botón menú quede integrado en título*/
 .nav{
   margin: 0px;
 }
@@ -68,6 +69,7 @@ ul{
 
 main {
   padding: 20px;
+  padding-top: 120px;
 }
 
 form {
@@ -103,5 +105,5 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 700px;
 }
