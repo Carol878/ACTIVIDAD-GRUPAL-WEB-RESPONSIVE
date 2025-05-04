@@ -89,7 +89,7 @@ form input, form textarea {
 
 form button {
   padding: 10px;
-  background-color: #21618c;
+  background-color: #2e86c1;
   color: white;
   border: none;
   cursor: pointer;
@@ -97,7 +97,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #2e86c1;
+  background-color: #21618c;
 }
 
 footer {
