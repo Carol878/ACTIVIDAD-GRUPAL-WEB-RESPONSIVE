@@ -29,54 +29,61 @@
     text-align: center;
   }
   
-  ul{
+  ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
-  .nav li a{
-    background-color: #2e86c1;
-    color:azure;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-  }
-  
-  .nav li a:hover{
-    background-color: #21618c;
+  .nav {
+    margin: 0;
+    padding: 0;
   }
   
   .nav > li {
-    float:left;
+    float: left;
+    position: relative;
+  }
+  
+  .nav li {
+    position: relative;
+  }
+  
+  .nav li a {
+    background-color: #2e86c1;
+    color: azure;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  .nav li a:hover {
+    background-color: #21618c;
   }
   
   .nav li ul {
     display: none;
     position: absolute;
+    top: 0;
+    left: 100%;
     min-width: 150px;
-    right: -165px;
-    top: 0px;
+    z-index: 1000;
   }
   
-  .nav li:hover > ul{
+  .nav li:hover > ul {
     display: block;
   }
   
-  /* Para que botón menú quede integrado en título*/
-  .nav{
-    margin: 0px;
+  .nav li ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
   }
   
-  .nav li{
-    position: relative;
-  }
-  
-  .nav li ul li{
-    position:relative;
-  }
-  
-  .nav li ul li ul{
-    right: -150px;
-    top:0px;
+  .nav li ul li:hover > ul {
+    display: block;
   }
   
   main {
