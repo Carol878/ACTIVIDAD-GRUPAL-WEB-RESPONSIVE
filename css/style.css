@@ -1,109 +1,172 @@
-/* Estilos básicos */
-body {
-  margin: 0px;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  list-style: none;
-}
-/* para id*/
-#contenedor {
-
-}
-
-header {
-  background-color: #2e86c1;
-  color: azure;
-  padding: 30px;
-  text-align: center;
-}
-
-ul{
-  list-style: none;
-}
-
-.nav li a{
-  background-color: #2e86c1;
-  color:azure;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-}
-
-.nav li a:hover{
-  background-color: #21618c;
-}
-
-.nav > li {
-  float:left;
-}
-
-.nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 150px;
-  right: -165px;
-  top: 0px;
-}
-
-.nav li:hover > ul{
-  display: block;
-}
-
-/* Para que botón menú quede integrado en título*/
-.nav{
-  margin: 0px;
-}
-
-.nav li{
-  position: relative;
-}
-
-.nav li ul li{
-  position:relative;
-}
-
-.nav li ul li ul{
-  right: -150px;
-  top:0px;
-}
-
-main {
-  padding: 20px;
-  padding-top: 120px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-form input, form textarea {
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  padding: 10px;
-  background-color: #2e86c1;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-form button:hover {
-  background-color: #21618c;
-}
-
-footer {
-  background-color: #2e86c1;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 700px;
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    list-style: none;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #2e86c1;
+    color: azure;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  .nav li a{
+    background-color: #2e86c1;
+    color:azure;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .nav li a:hover{
+    background-color: #21618c;
+  }
+  
+  .nav > li {
+    float:left;
+  }
+  
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    right: -165px;
+    top: 0px;
+  }
+  
+  .nav li:hover > ul{
+    display: block;
+  }
+  
+  /* Para que botón menú quede integrado en título*/
+  .nav{
+    margin: 0px;
+  }
+  
+  .nav li{
+    position: relative;
+  }
+  
+  .nav li ul li{
+    position:relative;
+  }
+  
+  .nav li ul li ul{
+    right: -150px;
+    top:0px;
+  }
+  
+  main {
+    padding: 20px;
+    padding-top: 120px;
+  }
+  
+  .about h2 {
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-container img {
+    margin-top: 3rem;
+    width: 700px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .about-container p {
+    max-width: 600px;
+    font-size: 1.1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #21618c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #2e86c1;
+  }
+  
+  .copyright {
+    background-color: #2e86c1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* === Media Queries === */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-container img {
+      width: 90%;
+    }
+  
+    .about-container p {
+      padding: 0 1rem;
+    }
+  
+    .nav > li {
+      float: none;
+    }
+  
+    .nav {
+      flex-direction: column;
+    }
+  }
+  
