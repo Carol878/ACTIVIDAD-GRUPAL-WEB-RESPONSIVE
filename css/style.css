@@ -29,7 +29,8 @@
     padding: 30px;
     text-align: center;
   }
-  
+
+  /* Menú*/
   ul {
     list-style: none;
     margin: 0;
@@ -86,7 +87,9 @@
   .nav li ul li:hover > ul {
     display: block;
   }
-  
+
+  /* Contenido */
+
   main {
     padding: 20px;
     padding-top: 0px;
@@ -128,7 +131,8 @@
     max-width: 600px;
     font-size: 1.1rem;
   }
-  
+
+  /* Formulario */
   form {
     display: flex;
     flex-direction: column;
@@ -151,7 +155,7 @@
   
   form button {
     padding: 10px;
-    background-color: #21618c;
+    background-color: #2e86c1;
     color: white;
     border: none;
     cursor: pointer;
@@ -159,9 +163,10 @@
   }
   
   form button:hover {
-    background-color: #2e86c1;
+    background-color: #21618c;
   }
-  
+
+  /* footer */
   .copyright {
     background-color: #2e86c1;
     color: white;

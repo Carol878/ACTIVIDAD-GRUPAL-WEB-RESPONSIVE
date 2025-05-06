@@ -30,15 +30,26 @@
             <h2>Formulario de Contacto</h2>
             <section>
               <form>
-                <input type="text" name="nombre" placeholder="Nombre y apellidos" required />
-                <input type="email" name="email" placeholder="Correo electrónico" required />
+                <fieldset>
+                  <legend>
+                    Datos personales
+                  </legend>
+                    <label>
+                      <input type="text" name="nombre" placeholder="Nombre y apellidos" required />
+                      <input type="email" name="email" placeholder="Correo electrónico" required />
+                      <input type="text" name="teléfono" placeholder="Teléfono" required />
+                      <input type="text" name="dirección" placeholder="Dirección" required />
+                      Número: <input type="number" name="" id="">
+                      <br>Rango de números<input type="range" name="" id=""min=10 max="50" step="1">
+                    </label>
+                </fieldset>
                 <fieldset>
                   <legend>
                     Interés del usuario
                   </legend>
                   <label>
-                    <input type="radio" name="Interés" value="Antivirus">
-                    Antivirus
+                    <input type="radio" name="Interés" value="Ciberseguridad">
+                    Ciberseguridad
                   </label>
                   <label>
                     <input type="radio" name="Interés" value="Sistema de IA">
@@ -54,7 +65,7 @@
                       Trabaja con nosotros
                     </legend>
                   <label>
-                    selecciona el puesto de interés:
+                    Selecciona el puesto de interés:
                     <select name="puestos">
                         <option value="1">Programador</option>
                         <option value="2">Experto en IA</option>
@@ -66,6 +77,9 @@
                     <br><div><input type="file" name="adjunto" accept=".pdf" multiple >
                     <input type="submit" value="Enviar"></div>
                   </label>
+                </fieldset>
+                <fieldset>
+                    Seleccione el color que desee:  <input type="color" name="`coche" value="#2e86c1">
                 </fieldset>
                 <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
                 <button type="submit">Enviar</button>
