@@ -208,6 +208,41 @@
     transform: rotateY(180deg);
   }
   
+  /*NEWS*/
+  .noticias {
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .noticias a {
+    text-decoration: none;
+    display: block;
+    width: 10rem;
+    color: white;
+    background: #2e86c1;
+    padding: 2px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  .noticias a:hover{
+    color: black;
+    background: #2e86c1;
+    transition: 0.5s;
+  }
+  .noticias img{
+    width: 50%;
+    max-width: 40vw;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+
   /* === Media Queries === */
   @media (max-width: 768px) {
     .about-container {
