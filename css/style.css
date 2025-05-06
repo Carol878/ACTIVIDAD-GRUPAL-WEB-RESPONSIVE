@@ -131,6 +131,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  fieldset{
+    background-color: white;
+    border: 1px solid #ccc;
+  }
   
   form button {
     padding: 10px;

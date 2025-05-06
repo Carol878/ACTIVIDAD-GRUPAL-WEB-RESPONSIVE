@@ -31,15 +31,50 @@
             <h2>Formulario de Contacto</h2>
             <section>
               <form>
-                <input type="text" name="nombre" placeholder="Tu nombre" required />
-                <input type="email" name="email" placeholder="Tu correo electrónico" required />
+                <input type="text" name="nombre" placeholder="Nombre y apellidos" required />
+                <input type="email" name="email" placeholder="Correo electrónico" required />
+                <fieldset>
+                  <legend>
+                    Interés del usuario
+                  </legend>
+                  <label>
+                    <input type="radio" name="Interés" value="Antivirus">
+                    Antivirus
+                  </label>
+                  <label>
+                    <input type="radio" name="Interés" value="Sistema de IA">
+                    Sistema de IA
+                  </label>
+                  <label>
+                    <input type="radio" name="Interés" value="Ambos">
+                    Ambos
+                  </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                      Trabaja con nosotros
+                    </legend>
+                  <label>
+                    selecciona el puesto de interés:
+                    <select name="puestos">
+                        <option value="1">Programador</option>
+                        <option value="2">Experto en IA</option>
+                        <option value="3">Back end</option>
+                        <option value="4">Front end</option>
+                        <option value="5">Diseñador</option>
+                        <option value="5">Tester</option>
+                      </select>
+                    <br><div><input type="file" name="adjunto" accept=".pdf" multiple >
+                    <input type="submit" value="Enviar"></div>
+                  </label>
+                </fieldset>
                 <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
                 <button type="submit">Enviar</button>
               </form>
             </section>
           </main>
         </div>
-        <footer>
+        <footer class="copyright">
           <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
         </footer>
       </body>
