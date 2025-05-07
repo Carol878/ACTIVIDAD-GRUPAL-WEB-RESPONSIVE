@@ -9,7 +9,7 @@
     <body>
       <div id="contenedor">
         <header>
-          <h1>Mi Sitio Web</h1>
+          <h1>DeepDefend</h1>
         </header>
           <ul class="nav">
             <li><a href="file:///C:/Users/Carol/OneDrive/Escritorio/UNIR/LENG%20DE%20MARCAS/GRUPAL-WEB-RESPONSIVE/index.html">Home</a>
@@ -29,21 +29,22 @@
           <main>
             <h2>Formulario de Contacto</h2>
             <section>
-              <form>
+              <form action="mailto:trotam97@gmil.com" method="post" autocomplete="on" target="_blank" class="contenedorFormulario">
                 <fieldset>
                   <legend>
                     Datos personales
                   </legend>
-                    <label>
-                      <input type="text" name="nombre" placeholder="Nombre y apellidos" required />
-                      <input type="email" name="email" placeholder="Correo electrónico" required />
-                      <input type="text" name="teléfono" placeholder="Teléfono" required />
-                      <input type="text" name="dirección" placeholder="Dirección" required />
-                      Número: <input type="number" name="" id="">
-                      <br>Rango de números<input type="range" name="" id=""min=10 max="50" step="1">
-                    </label>
+
+                  <label> <input type="text" id="nomApe" name="name" placeholder="Nombre y apellidos" required /></label>
+                  <label><br><input type="email" id="email" name="email" placeholder="Correo electrónico" required /></label>
+                  <label><br><input type="text" id="tel" name="telefono" placeholder="Teléfono" required /></label>
+                  <label><br><input type="text" id="direccion" name="direccion" placeholder="Dirección" required /></label>
+                  <label><br>Número: <input type="number" id="numDir" name="numDir" id="num" min="1" max="1000"></label>
+                  <label><br><input type="range" id="rangoNum" name="rangoNum" id="rNum" min="10" max="55" step="5"></label>
+
                 </fieldset>
                 <fieldset>
+
                   <legend>
                     Interés del usuario
                   </legend>
@@ -58,6 +59,10 @@
                   <label>
                     <input type="radio" name="Interés" value="Ambos">
                     Ambos
+                  </label>
+                  <label>
+                    <input type="radio" name="Interés" value="Ambos">
+                    Otros
                   </label>
                 </fieldset>
                 <fieldset>
@@ -75,14 +80,16 @@
                         <option value="5">Tester</option>
                       </select>
                     <br>Dinos tu disponibilidad:
-                    <br><input type="checkbox" name="si" checked> Completa
+                    <br><input type="checkbox" name="si" checked> Completa e inmediata
                     <br><input type="checkbox" name="duda"> Media Jornada
                     <br><input type="checkbox" name="duda"> Fines de semana
-                    <br><div><input type="file" name="adjunto" accept=".pdf" multiple >
+                    <br>En caso de no tener disponibilidad completa indique posible fecha de inicio:
+                    <input type="date" name="fechaDispo" id="fechaDispo">
+                    <br><input type="file" name="adjunto" accept=".pdf" multiple >
                   </label>
                 </fieldset>
                 <fieldset>
-                    Seleccione el color que desee:  <input type="color" name="`coche" value="#2e86c1">
+                    Seleccione el color que desee:  <input type="color" name="color" value="#2e86c1">
                 </fieldset>
                 <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
                 <button onclick="alert('Enviado correctamente')" type="submit">Enviar</button>
@@ -91,7 +98,7 @@
           </main>
         </div>
         <footer class="copyright">
-          <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+          <p>&copy; 2025 DeepDefend. Todos los derechos reservados.</p>
         </footer>
       </body>
 </html>
