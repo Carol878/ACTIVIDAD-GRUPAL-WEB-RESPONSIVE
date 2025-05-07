@@ -284,6 +284,12 @@
   }
 
 
+  /*Location*/
+  .mapa img{
+   width: 50%;
+   margin-left:25%;
+   padding: 1rem;
+  }
 
   /* === Media Queries === */
   @media (max-width: 768px) {
