@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
       <link rel="stylesheet" href="css/style.css">
-      <!-- Libreria iconos web https://fontawesome.com -->
       <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="icon" type="image/x-icon" href="img/favicon.png">
@@ -38,13 +37,12 @@
                     Datos personales
                   </legend>
 
-                  <label> <input type="text" id="nomApe" name="name" placeholder="Nombre y apellidos" required /></label>
-                  <label><br><input type="email" id="email" name="email" placeholder="Correo electrónico" required /></label>
-                  <label><br><input type="text" id="tel" name="telefono" placeholder="Teléfono" required /></label>
+                  <label> <input type="text" id="nomApe" name="name" placeholder="Nombre" required /></label>
+                  <label> <input type="text" id="Apel" name="Apel" placeholder="Apellidos" required /></label>
+                  <label><input type="email" id="email" name="email" placeholder="Correo electrónico" required /></label>
+                  <label><input type="text" id="tel" name="telefono" placeholder="Teléfono" required /></label>
                   <label><br><input type="text" id="direccion" name="direccion" placeholder="Dirección" required /></label>
-                  <label><br>Número: <input type="number" id="numDir" name="numDir" id="num" min="1" max="1000"></label>
-                  <label><br><input type="range" id="rangoNum" name="rangoNum" id="rNum" min="10" max="55" step="5"></label>
-
+                  <label>Número: <input type="number" id="numDir" name="numDir" min="1" max="1000"></label>
                 </fieldset>
                 <fieldset>
 
@@ -75,6 +73,7 @@
                   <label>
                     Selecciona el puesto de interés:
                     <select name="puestos">
+                        <option value="1">Prácticas</option>
                         <option value="1">Programador</option>
                         <option value="2">Experto en IA</option>
                         <option value="3">Back end</option>
@@ -82,6 +81,7 @@
                         <option value="5">Diseñador</option>
                         <option value="5">Tester</option>
                       </select>
+                    <br>Indica tu nivel de experienia en el sector: <input type="range" name="rangoNum" id="rNum" min="10" max="55" step="5">
                     <br>Dinos tu disponibilidad:
                     <br><input type="checkbox" name="si" checked> Completa e inmediata
                     <br><input type="checkbox" name="duda"> Media Jornada
@@ -92,10 +92,20 @@
                   </label>
                 </fieldset>
                 <fieldset>
-                    Seleccione el color que desee:  <input type="color" name="color" value="#2e86c1">
+                    Seleccione el color que desee:  <label><input type="color" name="color" value="#2e86c1"></label>
                 </fieldset>
-                <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-                <button onclick="alert('Enviado correctamente')" type="submit">Enviar</button>
+                <fieldset>
+                  <legend>
+                    Dejanos un mensaje
+                  </legend>
+                  <label >
+                    <textarea name="mensaje" rows="5" placeholder="" required></textarea>
+                  </label>
+                  </fieldset>
+                <div class="contenedorBotones">
+                  <button type="reset">Borrar</button>
+                  <button onclick="alert('Enviado correctamente')" type="submit">Enviar</button>
+                </div>
               </form>
             </section>
           </main>
