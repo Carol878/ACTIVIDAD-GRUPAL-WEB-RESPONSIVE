@@ -31,6 +31,10 @@
   }
 
   /* Menú*/
+  i{
+    margin-right: 10px;
+  }
+
   ul {
     list-style: none;
     margin: 0;
@@ -130,6 +134,7 @@
   .about-container p {
     max-width: 600px;
     font-size: 1.1rem;
+    text-align: justify-all;
   }
 
   /* Formulario */
@@ -193,7 +198,6 @@
   display: flex;
   align-items: center;        /* Alinea texto y rango a la misma altura */
   gap: 20px;                  /* Espacio entre el texto y el slider */
-  background-color: white;
 }
 
 .contenidoRango label {
