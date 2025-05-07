@@ -67,32 +67,35 @@
                   </label>
                 </fieldset>
                 <fieldset>
-                    <legend>
-                      Trabaja con nosotros
-                    </legend>
+                  <legend>
+                    Trabaja con nosotros
+                  </legend>
                   <label>
                     Selecciona el puesto de interés:
                     <select name="puestos">
-                        <option value="1">Prácticas</option>
-                        <option value="1">Programador</option>
-                        <option value="2">Experto en IA</option>
-                        <option value="3">Back end</option>
-                        <option value="4">Front end</option>
-                        <option value="5">Diseñador</option>
-                        <option value="5">Tester</option>
-                      </select>
-                    <br>Indica tu nivel de experienia en el sector: <input type="range" name="rangoNum" id="rNum" min="10" max="55" step="5">
-                    <br>Dinos tu disponibilidad:
-                    <br><input type="checkbox" name="si" checked> Completa e inmediata
-                    <br><input type="checkbox" name="duda"> Media Jornada
-                    <br><input type="checkbox" name="duda"> Fines de semana
-                    <br>En caso de no tener disponibilidad completa indique posible fecha de inicio:
-                    <input type="date" name="fechaDispo" id="fechaDispo">
-                    <br><input type="file" name="adjunto" accept=".pdf" multiple >
+                      <option value="1">Prácticas</option>
+                      <option value="1">Programador</option>
+                      <option value="2">Experto en IA</option>
+                      <option value="3">Back end</option>
+                      <option value="4">Front end</option>
+                      <option value="5">Diseñador</option>
+                      <option value="5">Tester</option>
+                    </select>
                   </label>
-                </fieldset>
-                <fieldset>
-                    Seleccione el color que desee:  <label><input type="color" name="color" value="#2e86c1"></label>
+                  <div class="contenidoRango">
+                    <label for="experiencia">Indica tu nivel de experiencia en el sector:</label>
+                    <input type="range" id="experiencia" min="0" max="100" value="50" step="1">
+                  </div>
+                  Dinos tu disponibilidad:
+                  <br><input type="checkbox" name="si" checked> Completa e inmediata
+                  <br><input type="checkbox" name="duda"> Media Jornada
+                  <br><input type="checkbox" name="duda"> Fines de semana
+                  <br>Indique posible fecha de inicio:
+                  <input type="date" name="fechaDispo" id="fechaDispo">
+                  <br><input type="file" name="adjunto" accept=".pdf" multiple>
+
+
+                  Seleccione el color que desee: <label><input type="color" name="color" value="#2e86c1"></label>
                 </fieldset>
                 <fieldset>
                   <legend>

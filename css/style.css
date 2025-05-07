@@ -154,7 +154,7 @@
   }
 
   fieldset{
-    background-color: white;
+    background-color: #d6eaf8;
     border: 1px solid #ccc;
   }
 
@@ -179,7 +179,7 @@
   }
 
   .contenedorBotones{
-    display: flex;           /* Usa Flexbox */
+    display: flex;
     justify-content: center; /* Para centrar los botones horizontalmente */
     gap: 8px;               /* Da espacio entre los botones */
     margin-top: 20px;
@@ -189,15 +189,20 @@
     background-color: #21618c;
   }
 
-  .num{
-    margin: 24px;
+.contenidoRango {
+  display: flex;
+  align-items: center;        /* Alinea texto y rango a la misma altura */
+  gap: 20px;                  /* Espacio entre el texto y el slider */
+  background-color: white;
+}
 
-  }
+.contenidoRango label {
+  text-align: left;
+}
 
-  .rNum{
-
-  }
-
+.contenidoRango input[type="range"] {
+  width: 300px;
+}
 
   /* footer */
   .copyright {
