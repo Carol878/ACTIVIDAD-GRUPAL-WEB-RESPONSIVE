@@ -31,6 +31,7 @@
   }
 
   /* Menú*/
+
   i{
     margin-right: 10px;
   }
@@ -90,6 +91,69 @@
   
   .nav li ul li:hover > ul {
     display: block;
+  }
+
+  /* Aside */
+
+  .contenido-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .contenido-principal {
+    flex: 1 1 70%;
+    min-width: 0;
+  }
+  
+  .sidebar {
+    flex: 0 0 300px;
+    background-color: #1a1d23;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #2c2f36;
+    height: fit-content;
+    color: #e0e0e0;
+  }
+  
+  .sidebar h3 {
+    color: #00d9a6;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar blockquote {
+    font-style: italic;
+    color: #ccc;
+    border-left: 4px solid #00d9a6;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-stack h4 {
+    font-size: 1.1rem;
+    color: #00d9a6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-stack ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tech-stack li {
+    margin-bottom: 0.5rem;
+    color: #c4f0e4;
+  }
+  
+  .sidebar-info {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #888;
   }
 
   /* Contenido */
@@ -166,7 +230,7 @@
   label textarea {
     width: 100%;
     height: 150px;
-    resize: vertical; /* Para redimensionar */
+    resize: vertical;
     margin: auto;
   }
   
@@ -185,8 +249,8 @@
 
   .contenedorBotones{
     display: flex;
-    justify-content: center; /* Para centrar los botones horizontalmente */
-    gap: 8px;               /* Da espacio entre los botones */
+    justify-content: center;
+    gap: 8px;
     margin-top: 20px;
   }
   
@@ -196,8 +260,8 @@
 
 .contenidoRango {
   display: flex;
-  align-items: center;        /* Alinea texto y rango a la misma altura */
-  gap: 20px;                  /* Espacio entre el texto y el slider */
+  align-items: center; 
+  gap: 20px; 
 }
 
 .contenidoRango label {
@@ -214,6 +278,7 @@
     color: white;
     text-align: center;
     padding: 15px;
+    margin-top: auto;
   }
 
   /*Nuestros trabajos*/
@@ -360,6 +425,24 @@
   align-items: center;
   text-align: center;
   gap: 2rem;
+}
+
+/* Aside */
+
+.contenido-flex {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.contenido-principal {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.sidebar {
+  width: 100%;
+  flex: 1 1 100%;
+  margin-top: 2rem;
 }
   }
   
