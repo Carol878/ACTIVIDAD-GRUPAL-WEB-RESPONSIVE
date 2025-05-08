@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Libreria iconos web https://fontawesome.com -->
-      <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.png">
-        <title>Área de actuación</title>
-    </head>
-    <body>
-        <div id="contenedor">
-            <header>
-                <h1>DeepDefend</h1>
-            </header>
-                <ul class="nav">
-                    <li ><a href="index.html" class="fa fa-home"> Home</a>
-                        <ul>
-                          <li><a href="us.html" class="fa fa-user"> Quiénes somos</a>
-                            <ul><li><a href="news.html" >Noticias</a></li></ul>
-                          </li>
-                          <li><a href="area.html" class="fa fa-laptop"> Áreas de actuación</a>
-                            <ul><li><a href="publishing.html">Publicaciones</a></li></ul>
-                          </li>
-                          <li><a href="contact.html" class="fa fa-phone"> Contacto</a>
-                            <ul><li><a href="location.html">Localización</a></li></ul>
-                          </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        <footer class="copyright">
-            <p>&copy; 2025 DeepDefend. Todos los derechos reservados.</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <title>Área de actuación</title>
+</head>
+<body class="layout">
+  <header>
+    <h1>DeepDefend</h1>
+    <ul class="nav">
+      <li><a href="index.html" class="fa fa-home"> Home</a>
+        <ul>
+          <li><a href="us.html">Quiénes somos</a>
+            <ul><li><a href="news.html">Noticias</a></li></ul>
+          </li>
+          <li><a href="area.html">Áreas de actuación</a>
+            <ul><li><a href="publishing.html">Publicaciones</a></li></ul>
+          </li>
+          <li><a href="contact.html">Contacto</a>
+            <ul><li><a href="location.html">Localización</a></li></ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- CONTENEDOR INDEPENDIENTE PARA MAIN + ASIDE -->
+  <div class="contenido-flex">
+    <main class="contenido-principal">
+      <h1>Proyectos Realizados</h1>
+      <h2>Áreas de Actuación</h2>
+      <p>Descubre en qué sectores trabajamos y cómo ayudamos a nuestros clientes a lograr sus objetivos.</p>
+      <div class="about">
+        <section class="area">
+          <h2>🔐 Soluciones Empresariales Personalizadas</h2>
+          <p>Desarrollamos aplicaciones a medida para mejorar la eficiencia operativa de empresas, como sistemas de gestión de inventarios, planificación de recursos y automatización de procesos internos.</p>
+          <span class="ejemplo">Ejemplo: Sistema de Gestión de Inventarios en tiempo real.</span>
+        </section>
+        <section class="area">
+          <h2>🎓 Tecnologías para la Educación</h2>
+          <p>Creamos plataformas digitales para la enseñanza y la formación, integrando herramientas de videoconferencia, evaluación online y seguimiento de rendimiento académico.</p>
+          <span class="ejemplo">Ejemplo: Plataforma de E-learning con exámenes y estadísticas.</span>
+        </section>
+        <section class="area">
+          <h2>📊 Herramientas de Productividad y Gestión de Equipos</h2>
+          <p>Diseñamos soluciones que facilitan la organización y seguimiento de tareas, especialmente en entornos ágiles, permitiendo mayor control sobre tiempos, reportes y colaboración en equipo.</p>
+          <span class="ejemplo">Ejemplo: App de Seguimiento de Proyectos para equipos ágiles.</span>
+        </section>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <h3>Nuestra Filosofía</h3>
+      <blockquote>
+        “No solo creamos software. Creamos soluciones que transforman la manera en que las personas trabajan y aprenden.”
+      </blockquote>
+      <div class="tech-stack">
+        <h4>Tecnologías Clave</h4>
+        <ul>
+          <li>✔️ Angular</li>
+          <li>✔️ Spring Boot</li>
+          <li>✔️ WebSocket</li>
+          <li>✔️ PostgreSQL</li>
+        </ul>
+      </div>
+      <p class="sidebar-info">Nos enfocamos en rendimiento, escalabilidad y experiencia de usuario. Todo lo que hacemos parte de la innovación.</p>
+    </aside>
+  </div>
+
+  <footer class="copyright">
+    <p>&copy; 2025 DeepDefend. Todos los derechos reservados.</p>
+  </footer>
+</body>
 </html>
