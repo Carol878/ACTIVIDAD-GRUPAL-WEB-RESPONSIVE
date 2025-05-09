@@ -104,12 +104,12 @@
     padding: 2rem;
     gap: 2rem;
   }
-  
+
   .contenido-principal {
     flex: 1 1 70%;
     min-width: 0;
   }
-  
+
   .sidebar {
     flex: 0 0 300px;
     background-color: #1a1d23;
@@ -249,8 +249,6 @@ section div a:hover{
   background-color: #21618c;
 }
 
-
-
 .completo {
   display: flex;
   height: 100%;
@@ -300,6 +298,7 @@ iframe{
     gap: 12px;
     max-width: 700px;
     margin: 0 auto;
+    /*padding: 0 16px; /* añade algo de espacio en pantallas pequeñas */
   }
 
   .contenedorFormulario{
@@ -308,7 +307,7 @@ iframe{
 
   form input, form textarea {
     padding: 4px;
-    margin: 8px;
+    margin: 8px 0;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -317,6 +316,7 @@ iframe{
   fieldset{
     background-color: #d6eaf8;
     border: 1px solid #ccc;
+    padding: 12px;
   }
 
   label textarea {
@@ -363,6 +363,23 @@ iframe{
 .contenidoRango input[type="range"] {
   width: 300px;
 }
+/*  MEDIA QUERY PARA MÓVILES */
+@media (max-width: 600px) {
+  .contenidoRango {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contenedorBotones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
 
   /* footer */
   .copyright {
@@ -380,7 +397,7 @@ iframe{
     height: 300px;
     perspective: 1000px;
   }
-  
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -388,7 +405,7 @@ iframe{
     transform-style: preserve-3d;
     transition: transform 0.6s;
   }
-  
+
   .flip-card-front, .flip-card-back {
     position: absolute;
     top: 0;
@@ -398,23 +415,23 @@ iframe{
     backface-visibility: hidden;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .flip-card-front {
     background-color: #ddd;
   }
-  
+
   .flip-card-front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  
+
   .flip-card-back {
     background-color: #2e86c1;
     color: white;
@@ -423,19 +440,19 @@ iframe{
     text-align: center;
     flex-direction: column;
   }
-  
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
+
   /*NEWS*/
   .noticias {
     position: relative;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    text-align: center; 
-    padding-top: 2rem; 
+    text-align: center;
+    padding-top: 2rem;
   }
 
   .noticias a {
@@ -450,13 +467,13 @@ iframe{
     transition: 0.5s;
   }
 
-  .noticias a:hover{
+  .noticias a:hover {
     color: black;
     background: #2e86c1;
     transition: 0.5s;
   }
 
-  .noticias img{
+  .noticias img {
     width: 20%;
     max-width: 40vw;
     height: 250px;
@@ -465,11 +482,21 @@ iframe{
 
 
   /*Location*/
-  .mapa{
+  .mapa {
     width: 100%;
     height: 100%;
     display: flex;
-   padding: 5rem;
+    padding: 5rem;
+  }
+
+  #map{
+    width: 40%;
+    height: 100%;
+  }
+
+  #maps{
+    width: 40%;
+    height: 100%;
   }
 
 
@@ -542,3 +569,4 @@ iframe{
 
 
   }
+
