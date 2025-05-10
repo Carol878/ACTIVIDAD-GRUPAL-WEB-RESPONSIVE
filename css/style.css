@@ -332,6 +332,8 @@
 }
   .mapa {
     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
   }
 
   .mapaIzq,
@@ -340,9 +342,10 @@
   }
 
   .mapaDer iframe {
-    height: 300px; /* o el valor que mejor se adapte */
+    height: 300px; /* o ajusta a lo que necesites */
   }
 }
+
 /* Formulario */
   form {
     display: flex;
