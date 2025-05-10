@@ -330,7 +330,19 @@
     text-align: center;
   }
 }
+  .mapa {
+    flex-direction: column;
+  }
 
+  .mapaIzq,
+  .mapaDer {
+    width: 100%;
+  }
+
+  .mapaDer iframe {
+    height: 300px; /* o el valor que mejor se adapte */
+  }
+}
 /* Formulario */
   form {
     display: flex;
