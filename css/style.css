@@ -204,7 +204,7 @@
 
   /*Index*/
   .index_texto{
-    width: 700px;
+    width: 100%;
     text-align: center;
     margin-left: 10px;
     padding-left: 20px;
@@ -534,36 +534,45 @@
 
   /*Location*/
   .mapa {
-    width: 100%;
-    height: 100%;
     display: flex;
-    padding: 5rem;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2%;
   }
 
-  #map{
-    width: 40%;
-    height: 100%;
+.mapaIzq{
+  height: 100%;
+  width: 50%;
+  padding: 2%;
   }
 
-  #maps{
-    width: 40%;
+  .mapaIzq img{
     height: 100%;
+    width: 100%;
+  }
+
+  .mapaDer{
+    height: 100%;
+    width: 50%;
+    padding: 2%;
+  }
+
+  .mapaDer iframe{
+    height: 100%;
+    width: 100%;
   }
 
   /* === Media Queries === */
   @media (max-width: 768px) {
     .mapa {
       flex-direction: column;
-      padding: 2rem;
     }
 
-    #map, #maps {
+    .mapaIzq, .mapaDer {
       width: 100%;
-      height: 300px;
+      padding: 10px 0;
     }
   }
-
-
   /* === Media Queries === */
   @media (max-width: 768px) {
     .about-container {
